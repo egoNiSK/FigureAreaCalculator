@@ -9,8 +9,8 @@
 Для решения необходимо создать вспомогательную промежуточную таблицу
 ```
 CREATE TABLE ProductsCategories (
-    ProductID INT,
-    CategoryID INT,
+    ProductId INT,
+    CategoryId INT,
     FOREIGN KEY (ProductId) REFERENCES Products(Id),
     FOREIGN KEY (CategoryId) REFERENCES Categories(Id),
     PRIMARY KEY (ProductId, CategoryId)
